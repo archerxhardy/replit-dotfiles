@@ -1,0 +1,87 @@
+configuration {
+    modi: "drun,run,window";
+    show-icons: true;
+    terminal: "kitty";
+    drun-display-format: "{icon} {name}";
+    location: 0;
+    disable-history: false;
+    hide-scrollbar: true;
+    display-drun: "   Apps ";
+    display-run: "   Run ";
+    display-window: " 﩯  Window";
+    sidebar-mode: true;
+}
+
+@theme "dark-minimal"
+
+window {
+    width: 600px;
+    border: 2px;
+    border-color: #313244;
+    border-radius: 8px;
+    background-color: rgba(17, 17, 27, 0.9);
+}
+
+mainbox {
+    background-color: transparent;
+}
+
+inputbar {
+    children: [prompt, entry];
+    background-color: transparent;
+    padding: 15px;
+}
+
+prompt {
+    background-color: #89b4fa;
+    padding: 8px 15px;
+    text-color: #11111b;
+    border-radius: 5px;
+    margin: 0px 10px 0px 0px;
+}
+
+entry {
+    padding: 8px;
+    text-color: #cdd6f4;
+    background-color: transparent;
+}
+
+listview {
+    padding: 10px;
+    columns: 1;
+    lines: 8;
+    background-color: transparent;
+}
+
+element {
+    padding: 10px;
+    background-color: transparent;
+    text-color: #cdd6f4;
+}
+
+element-icon {
+    size: 25px;
+}
+
+element selected {
+    background-color: rgba(137, 180, 250, 0.2);
+    text-color: #89b4fa;
+    border-radius: 5px;
+}
+
+mode-switcher {
+    spacing: 0;
+  }
+  
+button {
+    padding: 10px;
+    background-color: rgba(30, 30, 46, 0.5);
+    text-color: #a6adc8;
+    vertical-align: 0.5; 
+    horizontal-align: 0.5;
+}
+
+button selected {
+  background-color: #313244;
+  text-color: #89b4fa;
+}
