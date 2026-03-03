@@ -8,11 +8,15 @@
 
 window#waybar {
     background-color: rgba(5, 5, 5, 0.9);
-    color: #cdd6f4;
+    color: #ffffff;
     transition-property: background-color;
     transition-duration: .5s;
-    margin: 10px 10px 0 10px;
+    margin: 10px 100px 0 100px;
     border-radius: 12px;
+}
+
+#custom-menu, #clock {
+    color: #ffffff;
 }
 
 window#waybar.hidden {
